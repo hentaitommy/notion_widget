@@ -15,6 +15,8 @@ var _React = React,
 //   });
 // }
 
+navigator.serviceWorker.unregister();
+
 function Main() {
   return React.createElement(
     "div",
