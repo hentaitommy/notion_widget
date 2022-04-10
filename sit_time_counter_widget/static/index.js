@@ -18,16 +18,16 @@ var _React = React,
 function Main() {
   return React.createElement(
     "div",
-    { className: "relative text-transparent hover:text-black" },
+    { className: "relative text-transparent hover:text-black w-screen aspect-square" },
     React.createElement(
       "div",
-      { className: "p-4 bg-slate-300 w-screen rounded-3xl aspect-square hover:blur-sm" },
+      { className: "p-4 bg-slate-300  rounded-3xl  hover:blur-sm w-full h-full" },
       React.createElement(
         "div",
-        { className: "p-8 aspect-square rounded-full [background:conic-gradient(red,blue)]" },
+        { className: "p-8  rounded-full [background:conic-gradient(red,blue)] w-full h-full" },
         React.createElement(
           "div",
-          { className: "bg-slate-400 aspect-square rounded-full flex justify-center items-center" },
+          { className: "bg-slate-400 rounded-full flex justify-center items-center w-full h-full" },
           React.createElement(
             "div",
             { className: "text-xl text-white font-bold" },

@@ -15,10 +15,10 @@ const { useState, useEffect } = React
 
 function Main() {
   return (
-    <div className="relative text-transparent hover:text-black" >
-      <div className="p-4 bg-slate-300 w-screen rounded-3xl aspect-square hover:blur-sm">
-        <div className="p-8 aspect-square rounded-full [background:conic-gradient(red,blue)]">
-          <div className="bg-slate-400 aspect-square rounded-full flex justify-center items-center">
+    <div className="relative text-transparent hover:text-black w-screen aspect-square" >
+      <div className="p-4 bg-slate-300  rounded-3xl  hover:blur-sm w-full h-full">
+        <div className="p-8  rounded-full [background:conic-gradient(red,blue)] w-full h-full">
+          <div className="bg-slate-400 rounded-full flex justify-center items-center w-full h-full">
             <div className="text-xl text-white font-bold">
               00:00
             </div>
