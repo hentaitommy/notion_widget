@@ -1,6 +1,7 @@
 'use strict';
 const { useState, useEffect } = React
 
+let sw = 'serviceWorker' in navigator
 
 function Main() {
   const localCount = parseInt(localStorage.getItem('myCount'));
@@ -10,7 +11,7 @@ function Main() {
   })
   return (
     <div className="bg-slate-300 h-screen rounded-3xl" onClick={() => setCount(count + 1)}>
-      {count}
+      {count} {String(sw)}
     </div>
   )
 }

@@ -7,6 +7,8 @@ var _React = React,
     useEffect = _React.useEffect;
 
 
+var sw = 'serviceWorker' in navigator;
+
 function Main() {
   var localCount = parseInt(localStorage.getItem('myCount'));
 
@@ -23,7 +25,9 @@ function Main() {
     { className: 'bg-slate-300 h-screen rounded-3xl', onClick: function onClick() {
         return setCount(count + 1);
       } },
-    count
+    count,
+    ' ',
+    String(sw)
   );
 }
 
