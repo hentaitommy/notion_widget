@@ -1,0 +1,16 @@
+{
+  "name": "sit_time_counter_widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npx tailwindcss -i ./index.css -o ./static/index.css --watch\" \"babel --watch index.jsx --out-dir static --presets react-app/prod\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}

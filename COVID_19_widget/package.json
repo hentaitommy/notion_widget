@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "aliyun-api-gateway": "^1.1.6"
+  }
+}
