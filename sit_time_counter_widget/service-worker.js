@@ -1,14 +1,14 @@
-// self.addEventListener('install', function(event) {
-//   event.waitUntil(
-//     caches.open('v1').then(function(cache) {
-//       return cache.addAll([
-// 				'./',
-//         './static/index.js',
-//         './static/index.css',
-//       ]);
-//     })
-//   );
-// });
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open('v1').then(function(cache) {
+      return cache.addAll([
+				'./',
+        './static/index.js',
+        './static/index.css',
+      ]);
+    })
+  );
+});
 
 // self.addEventListener('fetch', function(event) {
 //   event.respondWith(
@@ -17,4 +17,4 @@
 //     })
 //   );
 // });
-//testyesy
+testyesy
