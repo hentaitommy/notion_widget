@@ -2,26 +2,32 @@
 const { useState, useEffect } = React
 
 
-let sw
+// let sw
 
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js', {scope: './'})
-  .then(function(registration) {
-    sw = 'succeeded';
-  }).catch(function(error) {
-    sw = error;
-  });
-}
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('service-worker.js', {scope: './'})
+//   .then(function(registration) {
+//     sw = 'succeeded';
+//   }).catch(function(error) {
+//     sw = error;
+//   });
+// }
 
 function Main() {
-  const localCount = parseInt(localStorage.getItem('myCount'));
-  const [count, setCount] = useState(localCount ? localCount : 0)
-  useEffect(() => {
-    localStorage.setItem('myCount', count);
-  })
   return (
-    <div className="bg-slate-300 h-screen rounded-3xl" onClick={() => setCount(count + 1)}>
-      {count} {String(sw)}
+    <div className="relative text-transparent hover:text-black" >
+      <div className="p-4 bg-slate-300 w-screen rounded-3xl aspect-square hover:blur-sm">
+        <div className="p-8 aspect-square rounded-full [background:conic-gradient(red,blue)]">
+          <div className="bg-slate-400 aspect-square rounded-full flex justify-center items-center">
+            <div className="text-xl text-white font-bold">
+              00:00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-1/2 left-1/2 [transform:translate(-50%,-50%)]">
+        <p className="text-center">Stand<br/>up</p>
+      </div>
     </div>
   )
 }
