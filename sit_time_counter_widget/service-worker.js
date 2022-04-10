@@ -2,9 +2,9 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open('v1').then(function(cache) {
       return cache.addAll([
-				'/sit_time_counter_widget',
-        '/sit_time_counter_widget/static/index.js',
-        '/sit_time_counter_widget/static/index.css',
+				'./',
+        './static/index.js',
+        './static/index.css',
       ]);
     })
   );
