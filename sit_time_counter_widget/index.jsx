@@ -1,7 +1,17 @@
 'use strict';
 const { useState, useEffect } = React
 
-let sw = 'serviceWorker' in navigator
+
+let sw
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js', {scope: './'})
+  .then(function(registration) {
+    sw = 'succeeded';
+  }).catch(function(error) {
+    sw = error;
+  });
+}
 
 function Main() {
   const localCount = parseInt(localStorage.getItem('myCount'));

@@ -7,7 +7,15 @@ var _React = React,
     useEffect = _React.useEffect;
 
 
-var sw = 'serviceWorker' in navigator;
+var sw = void 0;
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js', { scope: './' }).then(function (registration) {
+    sw = 'succeeded';
+  }).catch(function (error) {
+    sw = error;
+  });
+}
 
 function Main() {
   var localCount = parseInt(localStorage.getItem('myCount'));
