@@ -12,7 +12,10 @@ const { useState, useEffect } = React
 //     sw = error;
 //   });
 // }
-navigator.serviceWorker.unregister();
+navigator.serviceWorker.getRegistrations().then(function(registrations) {
+  for(let registration of registrations) {
+   registration.unregister()
+ } })
 
 function Main() {
   return (
