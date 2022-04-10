@@ -18,7 +18,7 @@ var _React = React,
 function Main() {
   return React.createElement(
     "div",
-    { className: "relative text-transparent hover:text-black w-screen aspect-square" },
+    { className: "relative text-transparent hover:text-black h-screen aspect-square" },
     React.createElement(
       "div",
       { className: "p-4 bg-slate-300  rounded-3xl  hover:blur-sm w-full h-full" },
@@ -31,7 +31,7 @@ function Main() {
           React.createElement(
             "div",
             { className: "text-xl text-white font-bold" },
-            "00:00"
+            "00:01"
           )
         )
       )

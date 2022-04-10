@@ -522,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-screen {
   width: 100vw;
 }
