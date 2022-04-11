@@ -20,13 +20,9 @@ navigator.serviceWorker.getRegistrations().then(function(registrations) {
 function Main() {
   return (
     <div className="relative text-transparent hover:text-black h-screen aspect-square" >
-      <div className="p-4 bg-slate-300  rounded-3xl  hover:blur-sm w-full h-full">
-        <div className="p-8  rounded-full [background:conic-gradient(red,blue)] w-full h-full">
-          <div className="bg-slate-400 rounded-full flex justify-center items-center w-full h-full">
-            <div className="text-xl text-white font-bold">
-              00:01
-            </div>
-          </div>
+      <div className="p-4 bg-red-500 rounded-3xl hover:blur-md w-full h-full">
+        <div className="p-8 rounded-full bg-red-500 w-full h-full [box-shadow:inset_0px_0px_50px_rgb(56,56,56)]">
+          
         </div>
       </div>
       <div className="absolute top-1/2 left-1/2 [transform:translate(-50%,-50%)]">

@@ -48,20 +48,8 @@ function Main() {
     { className: "relative text-transparent hover:text-black h-screen aspect-square" },
     React.createElement(
       "div",
-      { className: "p-4 bg-slate-300  rounded-3xl  hover:blur-sm w-full h-full" },
-      React.createElement(
-        "div",
-        { className: "p-8  rounded-full [background:conic-gradient(red,blue)] w-full h-full" },
-        React.createElement(
-          "div",
-          { className: "bg-slate-400 rounded-full flex justify-center items-center w-full h-full" },
-          React.createElement(
-            "div",
-            { className: "text-xl text-white font-bold" },
-            "00:01"
-          )
-        )
-      )
+      { className: "p-4 bg-red-500 rounded-3xl hover:blur-md w-full h-full" },
+      React.createElement("div", { className: "p-8 rounded-full bg-red-500 w-full h-full [box-shadow:inset_0px_0px_50px_rgb(56,56,56)]" })
     ),
     React.createElement(
       "div",
